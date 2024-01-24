@@ -19,7 +19,7 @@ public class Dateutil {
 
     public  boolean validateDateFormat() throws InvalidInputException {
         SimpleDateFormat sdf = new SimpleDateFormat(expectedFormat);
-        sdf.setLenient(false); // Disable lenient parsing to enforce strict validation
+        sdf.setLenient(false);
 
         try {
             Date parsedDate = sdf.parse(inputDate);
@@ -36,7 +36,7 @@ public class Dateutil {
 }
     public  boolean validateYearFormat() throws InvalidInputException {
         SimpleDateFormat sdf = new SimpleDateFormat(expectedYearFormat);
-        sdf.setLenient(false); // Disable lenient parsing to enforce strict validation
+        sdf.setLenient(false); 
 
         try {
             Date parsedDate = sdf.parse(inputDate);
