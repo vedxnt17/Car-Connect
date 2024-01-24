@@ -6,16 +6,14 @@ import java.util.Properties;
 
 public class DBPropertyUtil {
 	
-	//static String fileName="src/util/db.properties";
+
 
 	 public static String getConnectionString(String fileName) {
 	        Properties properties = new Properties();
 
 	        try (FileInputStream input = new FileInputStream(fileName)) {
-	            // Load properties from the file
 	            properties.load(input);
 
-	            // Retrieve the database URL by key
 	            String databaseUrl = properties.getProperty("db.url");
 
 	            if (databaseUrl != null && !databaseUrl.isEmpty()) {
@@ -30,7 +28,7 @@ public class DBPropertyUtil {
 	 
 	 
 	 public static void main(String[] args) {
-	        // Example usage
+	     
 	        String fileName = "../src/db.properties";
 	        String connectionString = getConnectionString(fileName);
 
