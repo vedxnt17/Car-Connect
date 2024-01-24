@@ -478,18 +478,6 @@ class Methods{
 		}
 	}
 	
-	/*
-	 * 
-	 * 
-	 * 
-	 * For Admins Only
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 */
 	
 	
 	public void updateAdmin() {
